@@ -14,6 +14,7 @@ import Home from "./Pages/Home";
 import ContactPage from "./Pages/contact/contact";
 import AboutPage from "./Pages/about/about";
 import DashboardPage from "./Pages/Dashboard";
+import Watchlist from "./Page/watchlist";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         element: <MovieDetail />,
       },
       {
+        path: "/watchlist",
+        element: <Watchlist />,
+      },
+      {
         path: "/signup",
         element: <SignUpForm />,
       },
@@ -67,6 +72,7 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+      
     ],
   },
 ]);
